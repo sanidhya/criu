@@ -1,1 +1,1 @@
-socket-tcpbuf-local.desc
+{'flavor': 'h ns uns', 'opts': '--tcp-established'}
