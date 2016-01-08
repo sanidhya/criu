@@ -253,6 +253,9 @@ int main(int argc, char *argv[], char *envp[])
 		{ "freeze-cgroup",		required_argument,	0, 1068 },
 		{ "ghost-limit",		required_argument,	0, 1069 },
 		{ "irmap-scan-path",		required_argument,	0, 1070 },
+		{ "ppp",		        no_argument,	0, 1071 },
+		{ "foam",		        no_argument,	0, 1072 },
+		{ "ond-restore",		no_argument,	0, 1073 },
 		{ },
 	};
 
@@ -771,6 +774,10 @@ usage:
 "  --port PORT           port of page server\n"
 "  -d|--daemon           run in the background after creating socket\n"
 "\n"
+"Checkpoint and restore options:\n"
+"  --ppp                 enable persistent physical pages\n"
+"  --foam                enable foam for both checkpoint and restore\n"
+"  --ond-restore         enable on-demand restore for any kind of checkpointing\n"
 "Other options:\n"
 "  -h|--help             show this text\n"
 "  -V|--version          show version\n"
